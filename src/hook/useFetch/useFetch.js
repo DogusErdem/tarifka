@@ -7,6 +7,7 @@ const useFetch = (url) => {
     const [error,setError] = useState(null);
     const [loading,setLoading] = useState(true);
     const [data,setData] = useState([]);
+    const [canWatch,setCanWatch] = useState(false)
 
     const fetchData = async () => {
         try {
@@ -19,7 +20,7 @@ const useFetch = (url) => {
         }
     }
     useEffect(()=>{fetchData()},[])
-    return {loading,error,data}
+    return {loading,error,data,canWatch}
 }
 
 export default useFetch;

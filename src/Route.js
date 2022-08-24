@@ -22,13 +22,15 @@ const Route = () => {
                     title:'MEALS',
                     headerTitleAlign:'center',
                     headerTitleStyle:{fontSize:25,fontWeight:'bold',color:'#FF6900'},
-                    headerStyle:{backgroundColor:'white'}
+                    headerStyle:{backgroundColor:'white'},
+                    
                 }}/>
                 <Stack.Screen name='DetailsScreen' component={Details} options={{
                     title:'DETAİLS',
                     headerTitleAlign:'center',
                     headerTitleStyle:{fontSize:25,fontWeight:'bold',color:'#FF6900'},
-                    headerStyle:{backgroundColor:'white'}
+                    headerStyle:{backgroundColor:'white'},
+                    
                 }}/>
             </Stack.Navigator>
         </NavigationContainer>

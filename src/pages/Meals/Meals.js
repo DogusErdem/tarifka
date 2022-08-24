@@ -1,5 +1,5 @@
 import React from "react";
-import { FlatList } from "react-native";
+import { FlatList, View } from "react-native";
 import Loading from '../../components/Loading'
 import Error from '../../components/Error'
 import MealsCard from "../../components/MealsCard";
@@ -26,11 +26,13 @@ const Meals = ({navigation,route}) => {
     }
 
     return(
+        <View>
         <FlatList
         keyExtractor={(item)=>item.idMeal}
         data={data.meals}
         renderItem={renderMeals}
         />
+        </View>
     )
 }
 
